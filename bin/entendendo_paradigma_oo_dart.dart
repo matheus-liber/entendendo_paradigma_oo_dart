@@ -1,5 +1,18 @@
-import 'package:entendendo_paradigma_oo_dart/entendendo_paradigma_oo_dart.dart' as entendendo_paradigma_oo_dart;
+void main() {
+  String nome = "Laranja";
+  double peso = 100.2;
+  String cor = "Verde e Amarela";
+  String sabor = "Adocicada e cítrica";
+  int diasDesdeColheita = 23;
+  bool isMadura = funcEstaMadura(diasDesdeColheita);
 
-void main(List<String> arguments) {
-  print('Hello world: ${entendendo_paradigma_oo_dart.calculate()}!');
+  print(isMadura);
+}
+
+bool funcEstaMadura(int dias){
+  if (dias >= 20){
+      return true;
+    } else {
+      return false;
+  }
 }
